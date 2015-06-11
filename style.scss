@@ -1,0 +1,230 @@
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(0deg, white,gray);
+}
+
+.pageWrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.contentWrapper {
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+}
+
+///////////
+// Title //
+///////////
+
+.title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 200px;
+  color:whitesmoke;
+  text-shadow: 0px 3px 3px black;
+
+  h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 6em;
+  }
+}
+
+
+/////////////
+// Content //
+/////////////
+
+.todoWrap {
+  height: 550px;
+  width:100%;
+  box-shadow: 0px 5px 10px black;
+}
+
+.topNav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 75px;
+  background-color: whitesmoke;
+  border: 1px solid #e2e2e2;
+
+  i {
+    margin-left: 50px;
+    font-size: 1.5em;
+    margin-right: 15px;
+  }
+  input {
+    margin-left: 5px;
+    border: none;
+    height: 48px;
+    width:100%;
+    font-size: 1.5em;
+    background-color: whitesmoke;
+    font-style: italic;
+    color:gray;
+    padding-left: 10px;
+  }
+  input:focus {
+    outline: none;
+  }
+  input::-webkit-input-placeholder {
+    color: lightgray;
+  }
+  input::-moz-placeholder{
+    color: lightgray;
+  }
+  input::-ms-placeholder{
+    color: lightgray;
+  }
+}
+
+.contentAll {
+  width:100%;
+  height:400px;
+  background-color: whitesmoke;
+  border: 1px solid #e2e2e2;
+  overflow: scroll;
+
+  .post {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    border-top: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+
+    i {
+      margin-left: 42.5px;
+      margin-right: 25px;
+
+    }
+
+    h2 {
+      margin-left: 60px;
+      width: 100%;
+    }
+  }
+}
+
+.fa-stack-1x {
+  line-height: inherit;
+  position: absolute;
+  left: 7px;
+  width: 10px;}
+
+.contentActive {
+  display: none;
+  width:100%;
+  height:400px;
+  background-color: whitesmoke;
+  border: 1px solid #e2e2e2;
+}
+
+.contentCompleted {
+  display: none;
+  width:100%;
+  height:400px;
+  background-color: whitesmoke;
+  border: 1px solid #e2e2e2;
+}
+
+.bottomNav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+          justify-content: space-between;
+  width:100%;
+  height:75px;
+  background-color: whitesmoke;
+  border: 1px solid #e2e2e2;
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .bottomLeft {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+            align-items: center;
+    flex-direction: row;
+    margin-left: 20px;
+    span {
+      margin-right: 5px;
+    }
+  }
+
+  .bottomMiddle {
+    button {
+      background-color: whitesmoke;
+    }
+    button:focus {
+      outline: gray;
+    }
+  }
+
+  .bottomRight {
+    margin-right: 20px;
+  }
+}
