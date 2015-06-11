@@ -64,6 +64,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
 .todoWrap {
+  max-height: 400px;
   width: 100%;
   box-shadow: 0px 5px 10px #1e1e1e; }
 
@@ -109,6 +110,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .contentAll {
   width: 100%;
+  max-height: 400px;
   background-color: whitesmoke;
   border: 1px solid #e2e2e2;
   overflow: scroll; }
@@ -147,12 +149,14 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .contentActive {
+  max-height: 400px;
   display: none;
   width: 100%;
   background-color: whitesmoke;
   border: 1px solid #e2e2e2; }
 
 .contentCompleted {
+  max-height: 400px;
   display: none;
   width: 100%;
   background-color: whitesmoke;
